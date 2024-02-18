@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+    <!-- arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>One Next Education</title>
+
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Primeiro Challenge - Turma 06</h1>
+        </div>
+    </header>
+    <main>
+        <section id="sectionEnterData">
+            <div id="encode">
+                <div class="moldura">
+                    <img  src="./img/enigma_2.png" alt="">
+                    <div class="moldExternas">
+                        <textarea class="opacidade" maxlength="111" name="txtAreaCriptografar" value="" id="txtAreaCriptografar" cols="30" rows="3" placeholder="Digite sua mensagem aqui."></textarea>
+                        <div class="divBtns">
+                            <button class="opacidade" type="button" id="btnCriptografar">Criptografar</button>
+                            <button class="opacidade" type="button" id="btnLimparCriptografar">Limpar</button>
+                        </div>
+                        <p id="msgCriptografada"></p>
+                    </div>
+                </div>
+            </div>
+            <div id="dencode">
+                <div class="moldura">
+                    <img src="./img/the_bombe_2.png" alt="">
+                    <div class="moldExternas">
+                        <textarea class="opacidade" maxlength="111" name="mensagem" value="" id="txtAreaDescriptografar" cols="30" rows="3"  placeholder="Digite sua mensagem aqui."></textarea>
+                        <div class="divBtns">
+                            <button class="opacidade" type="button" id="btnDescriptografar">Descriptografar</button>
+                            <button class="opacidade" type="button" id="btnLimparDescriptografar">Limpar</button>
+                        </div>
+                        <p id="msgDescriptografada"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

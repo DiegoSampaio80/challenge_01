@@ -1,0 +1,189 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Special Elite", system-ui;
+}
+
+.special-elite-regular {
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    min-width: 381px;
+    max-width: 1400px;
+    background-color: rgb(13, 14, 13);
+}
+
+header{
+    background-color: #fff;
+    text-align: center;
+    border: 15px solid rgb(156, 96, 5);
+    background-image: url(./img/papel_velho.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1px 1px 0px 1px;
+}
+
+header div{
+    border: 10px solid rgb(39, 25, 1);
+    border-style: inset;
+    width: 100%;
+    padding: 19px 40px 11px 40px;
+}
+
+#sectionEnterData{
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+    height: auto; 
+}
+
+#encode, 
+#dencode{
+    width: 100%;
+    height: fit-content;
+    border: 15px solid rgb(156, 96, 5);
+    aspect-ratio: 3/2.3;
+
+}
+
+.moldura{
+    border: 10px solid rgb(39, 25, 1);
+    border-style: inset;
+    padding: 0px;
+}
+
+#encode{
+    flex: 1;
+    margin: 1px 1px 1px 1px;
+}
+
+#dencode{
+    flex: 1;
+    margin: 1px 1px 1px 1px;          
+}
+
+#encode img, 
+#dencode img{
+    object-fit: cover;
+    object-position: 0px 0px;
+    width: 100%;
+    aspect-ratio: 3/2.3;
+}
+
+textarea{
+    padding: 10px;
+    width: 450px; 
+    height: 85px; 
+    font-size: 20px; 
+    outline: none; 
+    border-radius: 5px;
+    background-image: url(./img/papel_velho.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.opacidade{
+    opacity: 0.5;
+}
+
+.visivel{
+    visibility: visible;
+    width: auto;
+    height: auto;
+    width: 400px;
+    padding: 10px;
+    word-wrap: break-word;
+    background-image: url(./img/papel_velho.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+p{
+    margin-top: 20px;
+    visibility: hidden;
+    padding: 10px;
+    width: 400px; 
+    height: 80px; 
+    max-height: 80px; 
+    font-size: 20px; 
+    outline: none; 
+    border-radius: 5px;
+    overflow: auto;
+    background-color: #fff;
+}
+
+.moldExternas{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    width: 80%; 
+    height: fit-content; 
+    padding: 0px 0px; 
+    position: absolute; 
+    top: 25%; 
+    bottom: 25%;
+    left: 9%;
+    right: 9%;
+    z-index: 1;
+  
+}
+
+.divBtns{
+    width: 450px;
+    margin: 0px auto; 
+    display: flex; 
+    justify-content: space-evenly; 
+}
+
+#sectionEnterData > div{
+    position: relative
+}
+
+button{
+    width: 190px; 
+    padding: 18px 0px 13px 0px; 
+    margin-top: 20px; 
+    text-transform: uppercase;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color:  rgb(54, 100, 54);
+    border: 2px solid rgb(134, 180, 134);
+    border: 2px solid rgb(24, 70, 24); 
+    color: rgb(24, 70, 24);
+    font-weight: 600;
+    transition: box-shadow 0.4s, 
+                background-color 0.4s, 
+                color 0.4s, 
+                text-shadow 0.4s, 
+                border  0.4s;
+}
+
+.btnHover{
+    box-shadow: 0px 0px 20px rgba(154, 200, 154, 1);
+    background-color:  rgb(54, 100, 54);
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 15px rgb(255, 255, 255);
+    border: 2px solid rgb(134, 180, 134); 
+}
+
+@media screen and (max-width: 930px) {
+    #sectionEnterData{
+        flex-direction: column;
+        width: 100vw;
+        min-width: 475px;
+    }
+    #encode, 
+    #dencode{
+        overflow: hidden;
+        height: auto;
+    }
+    #encode img, 
+    #dencode img{
+        width: 100%;   
+    }
+} 
